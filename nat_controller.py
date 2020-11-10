@@ -31,7 +31,7 @@ class NatController(app_manager.RyuApp):
         of_packet = event.msg # openflow packet
         data_packet = packet.Packet(data=of_packet.data) # decapsulated packet
 
-
+        print("testing")
         print("############")
         print("arp table: ", self.arp_table)
         print("############\n")
